@@ -1,0 +1,25 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {chapter}{\numberline {1}Comandi di base}{2}
+\contentsline {section}{\numberline {1.1}Notazione}{2}
+\contentsline {section}{\numberline {1.2}Formattazione}{2}
+\contentsline {section}{\numberline {1.3}Elenchi}{3}
+\contentsline {section}{\numberline {1.4}Tabelle}{3}
+\contentsline {section}{\numberline {1.5}Personalizzazione}{4}
+\contentsline {chapter}{\numberline {2}Matematica}{5}
+\contentsline {section}{\numberline {2.1}Formule semplici}{5}
+\contentsline {section}{\numberline {2.2}Formule non numerate}{5}
+\contentsline {section}{\numberline {2.3}Formule numerate}{5}
+\contentsline {section}{\numberline {2.4}Funzioni}{5}
+\contentsline {section}{\numberline {2.5}Esempi}{6}
+\contentsline {chapter}{\numberline {3}Figure}{8}
+\contentsline {section}{\numberline {3.1}Inserire Figure}{8}
+\contentsline {chapter}{\numberline {4}Riferimenti}{10}
+\contentsline {section}{\numberline {4.1}Assegnazione nome}{10}
+\contentsline {section}{\numberline {4.2}Creazione Riferimento}{10}
+\contentsline {section}{\numberline {4.3}Esempio}{10}
+\contentsline {chapter}{\numberline {5}Documento da pi\IeC {\`u} file}{11}
+\contentsline {section}{\numberline {5.1}Creazione}{11}
+\contentsline {chapter}{\numberline {6}Codice}{12}
+\contentsline {section}{\numberline {6.1}Creazione}{12}
+\contentsline {section}{\numberline {6.2}Esempio}{12}

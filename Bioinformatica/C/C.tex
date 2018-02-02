@@ -1,0 +1,50 @@
+\documentclass[a4paper,12pt]{report} %modello del documento
+% \usepackage[top=1.8cm, bottom=2cm, left=2cm, right=2cm]{geometry} % margini aumentati
+\usepackage[italian]{babel} %imposta lingua
+\usepackage[T1]{fontenc} %imposta lingua
+\usepackage{amsmath, amssymb} %pachetto per formule
+\usepackage[parfill]{parskip} %non si dovrebbe fare, ma sostituisce le rientranze dei paragrafi con interlinea
+\usepackage{listings} % per poter far riconoscere e colorare codice 
+\usepackage{xcolor} %pacchetto per testo colorato
+\usepackage{float} %pachetto per figure
+\usepackage{booktabs}
+\usepackage{graphicx} %pachetto per tabelle
+\usepackage{tcolorbox} %riquadri colorati
+\usepackage{color} %definizione colori
+\usepackage[utf8]{inputenc} %imposta tipo di input con accenti
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstnewenvironment{Java}{
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywords=[2]{alignas, and, and_eq, asm, auto(1), bitand, bitor, bool, break, case, catch, char, char16_t, char32_t, class, compl, const, constexpr, const_cast, continue, decltype, default, delete, do, double, dynamic_cast, else, enum, explicit, export, extern, false, float, for, friend, goto, if, inline, int, long, mutable, namespace, new, noexcept, not, not_eq, nullptr, operator, or, or_eq, private, protected, public, register, reinterpret_cast, return, short, signed, sizeof, static, static_assert, static_cast, struct, switch, template, this, thread_local, throw, true, try, typedef, typeid, typename, union, unsigned, using(1), virtual, void, volatile, wchar_t, while, xor, xor_eq}
+  keywordstyle=\color{blue},
+  keywordstyle={[2]\color{blue}},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}}{}
+%\usepackage{indentfirst} % inserisce l'indentazione anche al primo capoverso
+
+\begin{document} %inizio del documento, va chuso alla fine
+
+\title{Riassunto comandi latex} 
+\author{Matteo Mistri}
+\maketitle %comando di creazione della prima pagina
+\tableofcontents %comando per creare l'indice
+
+\input{document}
+
+\end{document}
+

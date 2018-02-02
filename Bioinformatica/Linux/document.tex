@@ -1,0 +1,83 @@
+\chapter{Introduzione}
+Windows $\longrightarrow$ tutto è un oggetto(c++)\\
+Linux $\longrightarrow$ tutto è un file\\
+Perfino i processi sono descritti da file nelle cartelle denominate con il PID.
+La filosofia è avere molti programmi piccoli e ottimizati che fanno poche cose. Quello che in windows è un servizio, in Linux è un deamon.\\
+Il simbolo | permette di passare un output come input di un comando successivo.\\
+I nomi delle variabili non dovrebbero contenere spazi, se voglio usare spazi devo mettere il nome tra " "\\
+\textit{man} seguito dal comando mostra la help del comando (Es: cat ls).
+
+\chapter{Comandi}
+\section{Cartelle e file}
+\begin{description}
+\item [/] è la radice\\
+\item [dev] è la cartella con i device\\
+\item [ls -lph] mostra elenco file nella directory. Se aggiungo  | less mi viene impaginato l'output\\
+\item [cd] permette di muoversi nelle cartelle\\
+\item [mkdir] crea cartelle: l'opzione -p crea anche directory più esterne se fornisco una path\\
+\item [rmdir] elimina cartelle: -f forza il comando, -r è ricorsivo\\
+\end{description}
+
+\section{File}
+\begin{description}
+\item [touch nomefile] crea un file	\\
+\item [cat] mostra il contenuto del file\\
+\item [less] seguito dal nome del file da aprire, apre il file nella riga di comando. Col / faccio partire una ricerca\\
+\item [test] verifica che il file esista e abbia certe proprietà che specifico nelle opzioni. Restituisce 1 se è corretto, 0 se no. 
+\textit{test -f nomefile} verifica che esista il file, -s permette di specificare una dimensione minima, -r permette di indicare se è leggibile
+\item [head] restituisce le prime righe del file
+\item[tail] restituisce le prime righe del file
+\end{description}
+
+\section{Utility}
+\begin{description}
+\item [gzip] comprime il file dato in input. Di default elimina il file originale, se voglio tenerlo devo usare -k
+\item [gunzip] come sopra, ma decomprime
+\item [grep] cerca una stringa in un file, restituisce le righe del file che la contengono
+\item [time] prima di un comando restituisce il tempo di esecuzione
+\item [| sort] ordina l'ouitput di un altro comando
+\item [wc nomefile] conta il numero di righe, parole e caratteri di un file
+\item [tar] è un programma che crea archivi compressi. Si invoca con \textit{tar cvzf nomeinoutput cartelladacomprimere}. Al posto di z posso usare j o J per aumentare il grado di compressione(aumenta anche il tempo richiesto per l'elaborazione)
+\item [which] restituisce la path completa di un programma
+\item [pwd] stampa la working directory
+\end{description}
+
+\chapter{Programmazione}
+\section{Comandi}
+!! esegue l'ultimo comando all'interno di un altro comando. Ecco un esempio:
+\begin{tcolorbox}
+sudo man !!
+\end{tcolorbox}
+Posso salvare l'output di un comando su file con \textit{comando > nomefile}\\
+Se non c'è il file viene creato. Se uso >> non sovrascrivo ma concateno il l'output con il contenuto del file.
+
+\begin{description}
+\item [Ctrl + C] ferma il programma in esecuzione
+\item [Ctrl + Z] mette in pausa il processo in esecuzione 
+\item [fg] riprendere il programma messo in pausa
+\end{description}
+
+\section{Construtti base}
+\begin{cpp}
+for condizione; do
+	corpo
+	corpo
+	corpo
+done
+
+if condizione; then
+	corpo
+fi
+
+\end{cpp}
+
+Esempio di piccolo programma bash:
+
+\begin{cpp}
+for d in *
+do
+test -d $d && echo "$d"
+done
+\end{cpp}
+
+

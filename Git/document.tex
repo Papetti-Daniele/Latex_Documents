@@ -1,0 +1,136 @@
+\chapter{Teroia}
+Ho tre livelli:
+\begin{itemize}
+\item Working Directory
+\item Staging Area 
+\item git directory/Repository
+\end{itemize}
+Con lo stage dei file passo da WD a SA, con il commit da SA a Repository\\
+Con il checkout passo da Repository a WD.
+ 
+\chapter{Creazione repository}
+Creo una cartella in locale, apro la finestra del terminale e digitare 
+\begin{tcolorbox}
+git init
+\end{tcolorbox}
+si creerà una cartella .git, che contiene file di sistema.
+Dopodiche copio i file che voglio nella directory e uso il comando
+
+\begin{tcolorbox}
+git add nomefile
+\end{tcolorbox}
+posso sostituire il nome file con *.estensione per includere tutti i files con la estensione indicata
+\section{Commit}
+Per esegiore il commit delle modifiche, utilizzo il comando
+
+\begin{tcolorbox}
+commit -m 'Messaggio della commit'
+\end{tcolorbox}
+Se aggiungo l'opzione -a, committo tutto quello che è stato modificato, anche se non è staged. Evita il git add *
+
+\section{Reset}
+Per annullare l'ultima commit(non modifica files locali) uso:
+
+\begin{tcolorbox}
+git reset
+\end{tcolorbox}
+
+Per ripristinare i file locali a una commit precedente, ma mantenendo lo storico delle commit precedenti, uso:
+
+\begin{tcolorbox}
+//Individuo l'hash del commit a cui voglio tornare\\
+git log\\
+git revert --no-commit 46bdfb576c377ac7..HEAD\\
+git commit -m "Messaggio nuova commit"
+\end{tcolorbox}
+
+Per ripristinare i file locali a una commit precedente ed eliminare lo storico delle commit successive a quella ripristinata, uso:
+
+\begin{tcolorbox}
+//Individuo l'hash del commit a cui voglio tornare\\
+git log\\
+git reset --hard 46bdfb576c377ac7..\\
+git commit -m "Messaggio nuova commit"
+\end{tcolorbox}
+
+\section{Clone}
+Per copiare un intero progetto dal server che sul pc non ho, uso:
+
+\begin{tcolorbox}
+git clone url
+\end{tcolorbox}
+Questo collega la cartella con la repository con la cartella del progetto
+\section{Stato files}
+I file possono essere in 4 stati:
+\begin{itemize}
+\item Untracked
+\item Unmodified
+\item Modified
+\item Staged
+\end{itemize}
+Se aggiungo un file con add, diventa staged. Dopo una commit il file passa da staged a unmodified. Dopo una modifica entra nel Modified e dopo lo stage, passa da modified a staged.\\
+Per rimuovere un file uso git rm nomefile\\
+Il comdando:
+\begin{tcolorbox}
+git status
+\end{tcolorbox}
+ritorna lo stato di file nella cartella
+Per aggiungere nuovi files uso 
+
+\begin{tcolorbox}
+git add nomefile
+\end{tcolorbox}
+
+Allo stesso modo per mettere il file nella Stage Area utilizzo
+
+\begin{tcolorbox}
+git add nomefile
+\end{tcolorbox}
+
+\section{Gitignore}
+Se creo un file chiamato .gitignore posso specificare dei file da ignorare completamente. Esempio, ignorare i files che hanno estensione o oppure a e ignorare i files che iniziano con ~:
+
+\begin{tcolorbox}
+*.[oa]\\
+\verb|*~|
+\end{tcolorbox}
+
+Altro esempio:
+
+\begin{tcolorbox}
+\# no .a files\\
+*.a\\
+\# but do track lib.a, even though you're ignoring .a files above\\
+!lib.a\\
+\# only ignore the TODO file in the current directory, not subdir/TODO\\
+/TODO\\
+\# ignore all files in the build/ directory\\
+build/\\
+\# ignore doc/notes.txt, but not doc/server/arch.txt\\
+doc/*.txt\\
+\end{tcolorbox}
+
+\section{Collegamento con GitLab}
+Se ho fatto il clone, è gia collegtao con la repository di gitlab
+Uso il comando:
+
+\begin{tcolorbox}
+git remote add nomeprogetto link\\
+git push nomeprogetto master
+\end{tcolorbox}
+per collegare la cartella con il progetto di gitlab.
+
+\section{Pull/Fetch}
+L'istruzione fetch scarica eventuali nuove versioni dal server, senza modificare quelle presenti.\\
+L'istruzione pull scarica le nuove versioni dal server e esegue la merge con i file locali
+
+\section{Branch}
+Le branch sono gestite da git in modo trasparente. Sono degli snapshot dei files che vengono switchati a seconda del branch su cui stiamo lavorando. Il comando
+
+\begin{tcolorbox}
+git checkout nomebranch
+\end{tcolorbox}
+
+permette di cambiare la branch corrente. Per creare una nuova branch, prima di nomebranch utilizzo l'opzione -b. Per eliminare un branch utilizzo l'opzione -d.\\
+La branch di default è master.
+Devo riconfigurare il push come consigliato nel nuovo branch.

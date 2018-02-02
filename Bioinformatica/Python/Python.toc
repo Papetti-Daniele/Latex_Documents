@@ -1,0 +1,29 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {chapter}{\numberline {1}Introduzione}{3}
+\contentsline {chapter}{\numberline {2}Riga di comado}{4}
+\contentsline {chapter}{\numberline {3}Liste e Iteratori}{5}
+\contentsline {section}{\numberline {3.1}Slicing di sequenze}{6}
+\contentsline {section}{\numberline {3.2}Concatenazione}{6}
+\contentsline {section}{\numberline {3.3}Modifica Liste}{6}
+\contentsline {section}{\numberline {3.4}Utilit\IeC {\`a}}{7}
+\contentsline {chapter}{\numberline {4}Funzioni}{8}
+\contentsline {chapter}{\numberline {5}I/O}{9}
+\contentsline {chapter}{\numberline {6}Operatore di formato}{10}
+\contentsline {chapter}{\numberline {7}Collezioni}{11}
+\contentsline {section}{\numberline {7.1}Dizionari}{11}
+\contentsline {section}{\numberline {7.2}Insiemi}{12}
+\contentsline {section}{\numberline {7.3}Contatori}{12}
+\contentsline {chapter}{\numberline {8}Espressioni Regolari}{13}
+\contentsline {section}{\numberline {8.1}Ancore}{13}
+\contentsline {section}{\numberline {8.2}Classi}{13}
+\contentsline {section}{\numberline {8.3}Metasimboli}{14}
+\contentsline {section}{\numberline {8.4}Quantificatori}{14}
+\contentsline {section}{\numberline {8.5}Matching e Searching}{14}
+\contentsline {section}{\numberline {8.6}Back reference}{15}
+\contentsline {section}{\numberline {8.7}Metodi utili}{15}
+\contentsline {chapter}{\numberline {9}Ibridazione con codice C}{16}
+\contentsline {chapter}{\numberline {10}Formato FastQ}{17}
+\contentsline {chapter}{\numberline {11}Allineamento e formato SAM}{18}
+\contentsline {section}{\numberline {11.1}Allineamento}{18}
+\contentsline {section}{\numberline {11.2}Formato Sam}{19}
