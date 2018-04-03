@@ -1,4 +1,0 @@
-\select@language {italian}
-\select@language {italian}
-\contentsline {chapter}{\numberline {1}DNA}{2}
-\contentsline {chapter}{\numberline {2}Geni}{3}
