@@ -25,7 +25,7 @@ L'implementazione attuale della SOM fornisce tutte le funzionalità utilizzate n
 \section{Problemi da risolvere}
 La versione attuale del codice si rivela essere ancora troppo lenta, specialmente su piccole moli di dati. Questo sembra essere dovuto all'overhead introdotto dalla computazione su GPU di piccole quantità di dati, che risulta essere molto svantaggioso rispetto alla CPU.
 
-\section{Riusltati premliminari e prossimi passi}
+\section{Risultati preliminari e prossimi passi}
 Deve essere indagato il problema di prestazioni evidenziato in precedenza,  verificando se l'overhead introdotto dalla GPU vada scemando con il crescere della quantità di dati forniti alla SOM.\\
 Il testing dell'implementazione deve essere esteso a nuovi esempi di dati, possibilmente di dimensioni nell'oridne di grandezza dei dati realmente prodotti dalla features extraction su immagini medicali.\\
 Deve inoltre essere indagata la possibilità di effettuare la modifica dei pesi dei neuroni direttamente sulla GPU, in quanto essa si è dimostrata svantaggiosa per piccole moli di dati, ma potrebbe risultare sensata su quantità di dati considerevoli.\\
