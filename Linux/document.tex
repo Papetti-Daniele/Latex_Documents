@@ -5,28 +5,39 @@ Perfino i processi sono descritti da file nelle cartelle denominate con il PID.
 La filosofia è avere molti programmi piccoli e ottimizati che fanno poche cose. Quello che in windows è un servizio, in Linux è un deamon.\\
 Il simbolo | permette di passare un output come input di un comando successivo.\\
 I nomi delle variabili non dovrebbero contenere spazi, se voglio usare spazi devo mettere il nome tra " "\\
-\textit{man} seguito dal comando mostra la help del comando (Es: cat ls).
+
+\textit{man} seguito dal comando mostra la help del comando (Es: man ls).
+Per cercare all'interno del manale uso /paroladacercare e premo invio. Mi muovo nelle pagine con barraspazziatrice, esco con q\\
+
+Posso usare ctrl+r e scrivere l'inizio di un vecchio comando per recuperarlo\\
+
 
 \chapter{Comandi}
 \section{Cartelle e file}
 \begin{description}
 \item [/] è la radice\\
 \item [dev] è la cartella con i device\\
-\item [ls -lph] mostra elenco file nella directory. Se aggiungo  | less mi viene impaginato l'output\\
+\item [ls] mostra elenco file nella directory. Varie opzioni, lh aggiunge dettagli, a per i file nascosti\\
+\item [pwd] mostra il percorso assoluto alla cartella\\
 \item [cd] permette di muoversi nelle cartelle\\
 \item [mkdir] crea cartelle: l'opzione -p crea anche directory più esterne se fornisco una path\\
-\item [rmdir] elimina cartelle: -f forza il comando, -r è ricorsivo\\
+\item [rm] elimina un file/cartella(se forzato e ricorsivo): -f forza il comando, -r è ricorsivo\\
+\item [mv] rinomina il file o lo sposta. Si chiama mv vecchionome nuovonome. Esempio(mv prova ../../) sposta indietro di due cartelle\\
+
+
 \end{description}
 
 \section{File}
 \begin{description}
 \item [touch nomefile] crea un file	\\
+\item [vi] è un editor di testo. I per iniziare a scrivere, scrico, esc per uscire dalla scrittura, x per cancellare. Per salvare, entro nella linea di comando con :, w per salvare, q per uscire.\\
+\item [nano] editor di testo più avanzato. Comandi con ctrl + lettera consigliata. Salva all'uscita
 \item [cat] mostra il contenuto del file\\
 \item [less] seguito dal nome del file da aprire, apre il file nella riga di comando. Col / faccio partire una ricerca\\
 \item [test] verifica che il file esista e abbia certe proprietà che specifico nelle opzioni. Restituisce 1 se è corretto, 0 se no. 
 \textit{test -f nomefile} verifica che esista il file, -s permette di specificare una dimensione minima, -r permette di indicare se è leggibile
 \item [head] restituisce le prime righe del file
-\item[tail] restituisce le prime righe del file
+\item[tail] restituisce le ultime righe del file
 \end{description}
 
 \section{Utility}
@@ -56,28 +67,3 @@ Se non c'è il file viene creato. Se uso >> non sovrascrivo ma concateno il l'ou
 \item [Ctrl + Z] mette in pausa il processo in esecuzione 
 \item [fg] riprendere il programma messo in pausa
 \end{description}
-
-\section{Construtti base}
-\begin{cpp}
-for condizione; do
-	corpo
-	corpo
-	corpo
-done
-
-if condizione; then
-	corpo
-fi
-
-\end{cpp}
-
-Esempio di piccolo programma bash:
-
-\begin{cpp}
-for d in *
-do
-test -d $d && echo "$d"
-done
-\end{cpp}
-
-
