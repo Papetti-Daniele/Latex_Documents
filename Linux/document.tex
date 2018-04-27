@@ -40,6 +40,13 @@ Posso usare ctrl+r e scrivere l'inizio di un vecchio comando per recuperarlo\\
 \item[tail] restituisce le ultime righe del file
 \end{description}
 
+\section{Permessi}
+Con il comando ls -l vedo i permessi del file o cartella. I due nomi a fianco alle lettere indicano in ordine il possessore del file, il secondo il gruppo a cui appartiene il file.
+I gruppi di lettere sono 3(user, gruppo, other). Le lettere rappresentano read, write e execute(attraversamento se è una cartella).\\
+Lo user è il padrone del file, il gruppo è un insieme di utenti, other sono utenti fuori dal gruppo. I gruppi di 3 lettere sono modificabili come numeri binari. r è 4, w è 2, x è 1. Usando chmod valorepermessiutentevalorepermessigruppovalorepermessiother file, modifico questi permessi. Esempio: chmod 744 prova.txt\\
+Per cambiare il proprietario di file/cartella uso chown nomeutente nomefile
+
+
 \section{Utility}
 \begin{description}
 \item [gzip] comprime il file dato in input. Di default elimina il file originale, se voglio tenerlo devo usare -k
@@ -51,6 +58,7 @@ Posso usare ctrl+r e scrivere l'inizio di un vecchio comando per recuperarlo\\
 \item [tar] è un programma che crea archivi compressi. Si invoca con \textit{tar cvzf nomeinoutput cartelladacomprimere}. Al posto di z posso usare j o J per aumentare il grado di compressione(aumenta anche il tempo richiesto per l'elaborazione)
 \item [which] restituisce la path completa di un programma
 \item [pwd] stampa la working directory
+\item [htop] è il monitor di sistema
 \end{description}
 
 \chapter{Programmazione}
