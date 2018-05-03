@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: tesi.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: chap_qui.aux
+A level-1 auxiliary file: chap_quo.aux
+A level-1 auxiliary file: chap_qua.aux
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: tesi-blx.bib
+Database file #2: bibliography.bib
+Biblatex version: 3.3
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+You've used 3 entries,
+            6047 wiz_defined-function locations,
+            1151 strings with 8379 characters,
+and the built_in function-call counts, 7416 in all, are:
+= -- 280
+> -- 255
+< -- 61
++ -- 93
+- -- 98
+* -- 503
+:= -- 641
+add.period$ -- 0
+call.type$ -- 3
+change.case$ -- 27
+chr.to.int$ -- 34
+cite$ -- 4
+duplicate$ -- 726
+empty$ -- 763
+format.name$ -- 127
+if$ -- 1669
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 0
+newline$ -- 82
+num.names$ -- 94
+pop$ -- 677
+preamble$ -- 1
+purify$ -- 31
+quote$ -- 0
+skip$ -- 437
+stack$ -- 0
+substring$ -- 213
+swap$ -- 248
+text.length$ -- 71
+text.prefix$ -- 2
+top$ -- 1
+type$ -- 102
+warning$ -- 0
+while$ -- 89
+width$ -- 0
+write$ -- 78

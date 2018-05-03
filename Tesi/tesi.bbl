@@ -1,0 +1,82 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.6 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{notcited:book}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Cane}{C.}%
+     {Carlino}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \name{editor}{1}{}{%
+    {{}%
+     {Leggoo}{L.}%
+     {Anche}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {O'Reilly}%
+  }
+  \keyw{non-citato}
+  \strng{namehash}{CC1}
+  \strng{fullhash}{CC1}
+  \field{sortinit}{C}
+  \field{edition}{first edition}
+  \field{title}{{No one cited me}}
+  \verb{url}
+  \verb http://bar.com/
+  \endverb
+  \field{year}{2009}
+\endentry
+
+\entry{famous:paper}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Vader}{V.}%
+     {Darth}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cortex}{C.}%
+     {Neo}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{important}
+  \strng{namehash}{VDCN1}
+  \strng{fullhash}{VDCN1}
+  \field{sortinit}{V}
+  \verb{doi}
+  \verb 10.1145/1327452.1327492
+  \endverb
+  \field{pages}{107\bibrangedash 113}
+  \field{title}{{Hell yeah! I'm a super important paper!}}
+  \verb{url}
+  \verb http://www.foo.com
+  \endverb
+  \field{volume}{51}
+  \field{journaltitle}{Stampo Solo}
+  \field{year}{2008}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput
